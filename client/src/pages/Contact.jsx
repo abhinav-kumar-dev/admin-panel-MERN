@@ -29,7 +29,7 @@ const Contact = () => {
   const handleSubmit = async (e) => {
     e.preventDefault()
     try {
-      let response = await fetch("http://localhost:5000/api/v1/contact",{
+      let response = await fetch("https://admin-panel-backend-mtq8.onrender.com/api/v1/contact",{
         method:"POST",
         headers:{
           "Content-Type":"application/json"

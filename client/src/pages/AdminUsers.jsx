@@ -13,7 +13,7 @@ const AdminUsers = () => {
   // Fetch All Users
   const getAllusersData = async () => {
     try {
-      let response = await fetch("http://localhost:5000/api/v1/admin/users", {
+      let response = await fetch("https://admin-panel-backend-mtq8.onrender.com/api/v1/admin/users", {
         method: "GET",
         headers: {
           Authorization: `Bearer ${token}`
@@ -35,7 +35,7 @@ const AdminUsers = () => {
 
   const deleteuserWithId = async () => {
     try {
-      let response = await fetch(`http://localhost:5000/api/v1/admin/delete/${selectedUserId}`, {
+      let response = await fetch(`https://admin-panel-backend-mtq8.onrender.com/api/v1/admin/delete/${selectedUserId}`, {
         method: "DELETE",
         headers: {
           Authorization: `Bearer ${token}`

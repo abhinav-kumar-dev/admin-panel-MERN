@@ -26,7 +26,7 @@ const UpdateUser = () => {
 
     const getUserDataById = async () => {
         try {
-            let response = await fetch(`http://localhost:5000/api/v1/admin/getuser/${params.id}`, {
+            let response = await fetch(`https://admin-panel-backend-mtq8.onrender.com/api/v1/admin/getuser/${params.id}`, {
                 method: "GET",
                 headers: {
                     Authorization: `Bearer ${token}`
@@ -51,7 +51,7 @@ const UpdateUser = () => {
     const handleSubmit = async (e) => {
         e.preventDefault()
         try {
-            let response = await fetch(`http://localhost:5000/api/v1/admin/updateuser/${params.id}`,{
+            let response = await fetch(`https://admin-panel-backend-mtq8.onrender.com/api/v1/admin/updateuser/${params.id}`,{
                 method: "PUT",
                 headers: {
                     "Content-Type" : "application/json",

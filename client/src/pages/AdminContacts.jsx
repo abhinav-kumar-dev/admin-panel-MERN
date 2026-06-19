@@ -15,7 +15,7 @@ const AdminContacts = () => {
 
   const getAllContacts = async () => {
     try {
-      let response = await fetch("http://localhost:5000/api/v1/admin/contacts", {
+      let response = await fetch("https://admin-panel-backend-mtq8.onrender.com/api/v1/admin/contacts", {
         method: "GET",
         headers: {
           Authorization: `Bearer ${token}`
@@ -36,7 +36,7 @@ const AdminContacts = () => {
 
   const deleteContact = async (id) => {
     try {
-      let response = await fetch(`http://localhost:5000/api/v1/admin/contact/delete/${contactId}`, {
+      let response = await fetch(`https://admin-panel-backend-mtq8.onrender.com/api/v1/admin/contact/delete/${contactId}`, {
         method: "DELETE",
         headers: {
           Authorization: `Bearer ${token}`

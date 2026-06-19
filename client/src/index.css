@@ -1,0 +1,33 @@
+@import "tailwindcss";
+
+.Toastify__toast {
+  background: #0f172a !important; /* slate-950 */
+  color: #ffffff !important;
+  border: 1px solid #334155 !important; /* slate-700 */
+  border-radius: 14px !important;
+  font-size: 14px;
+}
+
+.Toastify__progress-bar {
+  background: #2563eb !important; /* blue-600 */
+}
+
+.Toastify__close-button {
+  color: white !important;
+}
+
+.Toastify__toast--success {
+  border-left: 4px solid #22c55e !important;
+}
+
+.Toastify__toast--error {
+  border-left: 4px solid #ef4444 !important;
+}
+
+.Toastify__toast--warning {
+  border-left: 4px solid #f59e0b !important;
+}
+
+.Toastify__toast--info {
+  border-left: 4px solid #3b82f6 !important;
+}
